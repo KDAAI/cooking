@@ -27,7 +27,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // ----------------------------------------------------
     const ingredientInputs = document.querySelectorAll('.ingredient-input');
     
+    // Helper to update spans inside recipe steps
+    const updateStepSpans = (input) => {
+        const id = input.dataset.id;
+        if (!id) return;
+        const spans = document.querySelectorAll(`span.step-ingredient-val[data-id="${id}"]`);
+        spans.forEach(span => {
+            span.textContent = input.value;
+        });
+    };
+
     ingredientInputs.forEach(input => {
+        // Initialize step spans on page load
+        updateStepSpans(input);
+
         input.addEventListener('input', (e) => {
             const currentInput = e.target;
             const baseVal = parseFloat(currentInput.dataset.baseVal);
@@ -58,7 +71,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else {
                     otherInput.value = Math.round(scaledVal);
                 }
+
+                updateStepSpans(otherInput);
             });
+
+            updateStepSpans(currentInput);
         });
 
         // Prevent typing non-numeric characters (except decimals)
