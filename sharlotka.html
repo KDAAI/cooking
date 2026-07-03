@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Шарлотка с яблоками - Рецепт с калькулятором</title>
-    <meta name="description" content="Пошаговый интерактивный рецепт приготовления пышной яблочной шарлотки с автоматическим пересчетом пропорций ингредиентов и кондитерскими секретами.">
+    <meta name="description" content="Пошаговый интерактивный рецепт приготовления пышной яблочной шарлотки с автоматическим пересчетом пропорций ингредиентов и секретами воздушного бисквита.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -56,20 +56,6 @@
                             </div>
                         </li>
                         <li class="ingredient-item">
-                            <span class="ingredient-name">Сахар</span>
-                            <div class="ingredient-amount-wrapper">
-                                <input type="number" class="ingredient-input" data-base-val="200" value="200" data-id="sugar">
-                                <span class="ingredient-unit">г</span>
-                            </div>
-                        </li>
-                        <li class="ingredient-item">
-                            <span class="ingredient-name">Мука пшеничная</span>
-                            <div class="ingredient-amount-wrapper">
-                                <input type="number" class="ingredient-input" data-base-val="200" value="200" data-id="flour">
-                                <span class="ingredient-unit">г</span>
-                            </div>
-                        </li>
-                        <li class="ingredient-item">
                             <span class="ingredient-name">Яйца</span>
                             <div class="ingredient-amount-wrapper">
                                 <input type="number" class="ingredient-input" data-base-val="4" value="4" data-id="eggs">
@@ -77,23 +63,37 @@
                             </div>
                         </li>
                         <li class="ingredient-item">
-                            <span class="ingredient-name">Разрыхлитель</span>
+                            <span class="ingredient-name">Сахар</span>
+                            <div class="ingredient-amount-wrapper">
+                                <input type="number" class="ingredient-input" data-base-val="180" value="180" data-id="sugar">
+                                <span class="ingredient-unit">г</span>
+                            </div>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Пшеничная мука</span>
+                            <div class="ingredient-amount-wrapper">
+                                <input type="number" class="ingredient-input" data-base-val="180" value="180" data-id="flour">
+                                <span class="ingredient-unit">г</span>
+                            </div>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Разрыхлитель (опц.)</span>
                             <div class="ingredient-amount-wrapper">
                                 <input type="number" class="ingredient-input" data-base-val="5" value="5" data-id="bakingpowder">
                                 <span class="ingredient-unit">г</span>
                             </div>
                         </li>
                         <li class="ingredient-item">
-                            <span class="ingredient-name">Корица молотая</span>
+                            <span class="ingredient-name">Ванильный сахар (опц.)</span>
                             <div class="ingredient-amount-wrapper">
-                                <input type="number" class="ingredient-input" data-base-val="5" value="5" data-id="cinnamon">
+                                <input type="number" class="ingredient-input" data-base-val="8" value="8" data-id="vanillasugar">
                                 <span class="ingredient-unit">г</span>
                             </div>
                         </li>
                         <li class="ingredient-item">
                             <span class="ingredient-name">Сливочное масло</span>
                             <div class="ingredient-amount-wrapper">
-                                <input type="number" class="ingredient-input" data-base-val="15" value="15" data-id="butter">
+                                <input type="number" class="ingredient-input" data-base-val="10" value="10" data-id="butter">
                                 <span class="ingredient-unit">г</span>
                             </div>
                         </li>
@@ -111,7 +111,7 @@
                             </div>
                             <div class="step-content">
                                 <div class="step-number">Шаг 1</div>
-                                <div class="step-text">Разогрейте духовку до 180°C. Смажьте круглую форму для выпечки сливочным маслом (<span class="step-ingredient-val" data-id="butter">15</span> г) и слегка присыпьте мукой.</div>
+                                <div class="step-text">Разогрейте духовку до 180 °C.</div>
                                 <div class="step-qa-container">
                                     <button class="qa-toggle-btn">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42L12 13.59l5.29-5.3a1 1 0 0 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/></svg>
@@ -119,7 +119,7 @@
                                     </button>
                                     <div class="qa-answer-panel">
                                         <div class="qa-answer-content">
-                                            Бисквитное тесто очень нежное. Если поставить его в холодную духовку, нагрев будет происходить медленно, пузырьки воздуха лопнут до того, как схватится структура белка, и пирог получится плоским и клёклым.
+                                            Бисквитное тесто очень нежное. Если поставить его в холодную духовку, нагрев будет происходить слишком медленно. Воздушные пузырьки лопнут до того, как схватится структура белка, и пирог получится плоским и плотным.
                                         </div>
                                     </div>
                                 </div>
@@ -133,7 +133,7 @@
                             </div>
                             <div class="step-content">
                                 <div class="step-number">Шаг 2</div>
-                                <div class="step-text">Вымойте <span class="step-ingredient-val" data-id="apples">500</span> г яблок, удалите сердцевину и нарежьте их тонкими ломтиками. Посыпьте нарезанные яблоки корицей (<span class="step-ingredient-val" data-id="cinnamon">5</span> г) и перемешайте.</div>
+                                <div class="step-text">Очистите яблоки (<span class="step-ingredient-val" data-id="apples">500</span> г) по желанию, удалите сердцевину и нарежьте ломтиками толщиной 5–7 мм.</div>
                                 <div class="step-qa-container">
                                     <button class="qa-toggle-btn">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42L12 13.59l5.29-5.3a1 1 0 0 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/></svg>
@@ -141,7 +141,7 @@
                                     </button>
                                     <div class="qa-answer-panel">
                                         <div class="qa-answer-content">
-                                            Выбирайте кислые или кисло-сладкие, твёрдые яблоки (например, сорта Антоновка или Гренни Смит). Кислинка идеально контрастирует со сладким бисквитным тестом, а плотная структура не даёт яблокам превратиться в пюре.
+                                            Лучше всего подходят кисло-сладкие яблоки. Их кислинка превосходно балансирует сладость теста, а плотная мякоть не превращается в пюре при запекании.
                                         </div>
                                     </div>
                                 </div>
@@ -155,15 +155,15 @@
                             </div>
                             <div class="step-content">
                                 <div class="step-number">Шаг 3</div>
-                                <div class="step-text">Разбейте <span class="step-ingredient-val" data-id="eggs">4</span> шт яиц в глубокую сухую миску, всыпьте <span class="step-ingredient-val" data-id="sugar">200</span> г сахара. Взбивайте миксером на высокой скорости в течение 5-7 минут.</div>
+                                <div class="step-text">Разбейте <span class="step-ingredient-val" data-id="eggs">4</span> шт яиц в глубокую сухую миску, добавьте сахар (<span class="step-ingredient-val" data-id="sugar">180</span> г) и ванильный сахар (<span class="step-ingredient-val" data-id="vanillasugar">8</span> г). Взбивайте миксером на высокой скорости в течение 5–7 минут.</div>
                                 <div class="step-qa-container">
                                     <button class="qa-toggle-btn">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42L12 13.59l5.29-5.3a1 1 0 0 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/></svg>
-                                        Как определить, достаточно ли взбиты яйца?
+                                        До какого состояния нужно взбивать яичную массу?
                                     </button>
                                     <div class="qa-answer-panel">
                                         <div class="qa-answer-content">
-                                            Масса должна увеличиться в объеме в 2.5-3 раза, стать белой, плотной и тягучей. Если провести по ней лопаткой, след должен оставаться на поверхности в течение 3-4 секунд.
+                                            Масса должна стать заметно светлее, гуще и увеличиться в объеме в 2–3 раза. Если провести венчиком, след на поверхности должен оставаться видимым в течение нескольких секунд.
                                         </div>
                                     </div>
                                 </div>
@@ -177,15 +177,15 @@
                             </div>
                             <div class="step-content">
                                 <div class="step-number">Шаг 4</div>
-                                <div class="step-text">Просейте <span class="step-ingredient-val" data-id="flour">200</span> г муки вместе с <span class="step-ingredient-val" data-id="bakingpowder">5</span> г разрыхлителя. Постепенно добавьте её к яичной смеси, аккуратно вмешивая силиконовой лопаткой движениями снизу-вверх от края к центру.</div>
+                                <div class="step-text">Просейте пшеничную муку (<span class="step-ingredient-val" data-id="flour">180</span> г) и разрыхлитель (<span class="step-ingredient-val" data-id="bakingpowder">5</span> г) и аккуратно вмешайте лопаткой движениями снизу вверх.</div>
                                 <div class="step-qa-container">
                                     <button class="qa-toggle-btn">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42L12 13.59l5.29-5.3a1 1 0 0 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/></svg>
-                                        Почему нельзя использовать миксер на этом этапе?
+                                        Почему муку нужно вмешивать именно лопаткой, а не миксером?
                                     </button>
                                     <div class="qa-answer-panel">
                                         <div class="qa-answer-content">
-                                            Миксер разрушит воздушные пузырьки, которые мы создали при взбивании яиц. Медленное складывание лопаткой сохраняет воздух в тесте, делая будущий пирог воздушным и пористым.
+                                            После взбивания в тесте находится множество воздушных пузырьков, которые поднимают пирог. Использование миксера разрушит эти пузырьки и слишком разовьет клейковину муки — тесто осядет, станет плотным, а шарлотка получится резиновой. Вмешивайте лопаткой аккуратно снизу вверх и только до исчезновения сухих комочков.
                                         </div>
                                     </div>
                                 </div>
@@ -199,18 +199,7 @@
                             </div>
                             <div class="step-content">
                                 <div class="step-number">Шаг 5</div>
-                                <div class="step-text">Выложите яблоки на дно формы ровным слоем, затем залейте их тестом так, чтобы оно полностью и равномерно покрыло фрукты.</div>
-                                <div class="step-qa-container">
-                                    <button class="qa-toggle-btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42L12 13.59l5.29-5.3a1 1 0 0 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/></svg>
-                                        Можно ли смешать яблоки с тестом перед выкладыванием?
-                                    </button>
-                                    <div class="qa-answer-panel">
-                                        <div class="qa-answer-content">
-                                            Да, можно. Если вы хотите, чтобы яблоки были равномерно распределены по всему объему теста, смешайте их. Если вы хотите плотный яблочный слой внизу и нежный бисквит вверху — уложите яблоки на дно и залейте.
-                                        </div>
-                                    </div>
-                                </div>
+                                <div class="step-text">Смажьте форму сливочным маслом (<span class="step-ingredient-val" data-id="butter">10</span> г).</div>
                             </div>
                         </div>
 
@@ -221,18 +210,40 @@
                             </div>
                             <div class="step-content">
                                 <div class="step-number">Шаг 6</div>
-                                <div class="step-text">Поставьте пирог в духовку на 35-40 минут. Первые 25 минут не открывайте дверцу духовки. Проверяйте готовность зубочисткой.</div>
+                                <div class="step-text">Выложите яблоки в форму и залейте тестом.</div>
+                            </div>
+                        </div>
+
+                        <!-- Step 7 -->
+                        <div class="step-item">
+                            <div class="step-checkbox-wrapper">
+                                <input type="checkbox" class="step-checkbox" id="step-6">
+                            </div>
+                            <div class="step-content">
+                                <div class="step-number">Шаг 7</div>
+                                <div class="step-text">Выпекайте 35–45 минут до золотистой корочки. Готовность проверьте деревянной шпажкой — она должна выходить сухой.</div>
                                 <div class="step-qa-container">
                                     <button class="qa-toggle-btn">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42L12 13.59l5.29-5.3a1 1 0 0 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/></svg>
-                                        Почему нельзя открывать духовку и как проверить готовность?
+                                        Можно ли открывать духовку во время выпечки?
                                     </button>
                                     <div class="qa-answer-panel">
                                         <div class="qa-answer-content">
-                                            Открытие дверцы снижает температуру в духовке, из-за чего неокрепший бисквитный каркас может опасть и больше не подняться. Проверяйте готовность деревянной шпажкой или зубочисткой в центре пирога: она должна выходить абсолютно сухой.
+                                            Первые 30 минут открывать духовку категорически нельзя. При открытии падает температура, воздушный каркас неокрепшего бисквита оседает, и вернуть пышность пирогу уже не удастся.
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 8 -->
+                        <div class="step-item">
+                            <div class="step-checkbox-wrapper">
+                                <input type="checkbox" class="step-checkbox" id="step-7">
+                            </div>
+                            <div class="step-content">
+                                <div class="step-number">Шаг 8</div>
+                                <div class="step-text">Дайте пирогу постоять 10–15 минут, затем извлеките из формы. Перед подачей можно посыпать сахарной пудрой.</div>
                             </div>
                         </div>
                     </div>
