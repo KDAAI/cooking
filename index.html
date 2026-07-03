@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кулинарная Книга - Интерактивные Рецепты</title>
+    <meta name="description" content="Удобная интерактивная книга рецептов с автоматическим калькулятором пропорций ингредиентов, встроенными ответами на вопросы и отслеживанием прогресса приготовления.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <div class="logo-section">
+                <span class="logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </span>
+                <h1>Умные Рецепты</h1>
+            </div>
+            <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Переключить тему">
+                <!-- Moon icon (for dark mode selection) -->
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <!-- Sun icon (for light mode selection) -->
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            </button>
+        </header>
+
+        <!-- HERO SECTION -->
+        <main>
+            <section class="hero">
+                <h2>Ваш личный помощник на кухне</h2>
+                <p>Выбирайте рецепт, вводите вес любого ингредиента, и наш калькулятор пересчитает остальные пропорции. Отмечайте готовые шаги и разворачивайте полезные кулинарные советы прямо в тексте!</p>
+            </section>
+
+            <!-- SEARCH CONTAINER -->
+            <div class="search-container">
+                <span class="search-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </span>
+                <input type="text" id="recipeSearch" class="search-input" placeholder="Поиск рецептов по названию, ингредиентам...">
+            </div>
+
+            <!-- RECIPES GRID -->
+            <div class="recipes-grid">
+                <!-- CARD 1: Vegetable Stew -->
+                <article class="recipe-card" id="card-ragu">
+                    <div class="recipe-card-header">
+                        <div class="recipe-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 11h16a1 1 0 0 1 1 1v6a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-6a1 1 0 0 1 1-1z"/>
+                                <path d="M12 2v3"/>
+                                <path d="M8 3v2"/>
+                                <path d="M16 3v2"/>
+                                <path d="M2 11h20"/>
+                                <path d="M6 15h12"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="recipe-card-body">
+                        <h3>Овощное рагу</h3>
+                        <p>Сочное рагу с мясным фаршем и кабачками по улучшенной ресторанной технологии. Идеальный баланс текстур без лишней воды.</p>
+                        <div class="recipe-meta-tags">
+                            <span class="meta-tag">Мясо</span>
+                            <span class="meta-tag">Кабачки</span>
+                            <span class="meta-tag">Шеф-рецепт</span>
+                            <span class="meta-tag">45 мин</span>
+                        </div>
+                        <a href="ragu.html" class="recipe-card-btn">Открыть рецепт</a>
+                    </div>
+                </article>
+
+                <!-- CARD 2: Sharlotka -->
+                <article class="recipe-card" id="card-sharlotka">
+                    <div class="recipe-card-header">
+                        <div class="recipe-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="recipe-card-body">
+                        <h3>Шарлотка с яблоками</h3>
+                        <p>Классический, пышный и невероятно нежный яблочный пирог. Всего несколько ингредиентов, которые найдутся на любой кухне.</p>
+                        <div class="recipe-meta-tags">
+                            <span class="meta-tag">Выпечка</span>
+                            <span class="meta-tag">Яблоки</span>
+                            <span class="meta-tag">Сладкое</span>
+                            <span class="meta-tag">50 мин</span>
+                        </div>
+                        <a href="sharlotka.html" class="recipe-card-btn">Открыть рецепт</a>
+                    </div>
+                </article>
+
+                <!-- CARD 3: Plov -->
+                <article class="recipe-card" id="card-plov">
+                    <div class="recipe-card-header">
+                        <div class="recipe-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 3a9 9 0 0 0-9 9h18a9 9 0 0 0-9-9z"/>
+                                <path d="M3 12a9 9 0 0 0 9 9 9 9 0 0 0 9-9"/>
+                                <path d="M12 7v5"/>
+                                <path d="M8 12h8"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="recipe-card-body">
+                        <h3>Традиционный плов</h3>
+                        <p>Сытный восточный плов с сочным мясом, рассыпчатым рисом и ароматными специями. Секреты приготовления настоящего зирвака.</p>
+                        <div class="recipe-meta-tags">
+                            <span class="meta-tag">Мясо</span>
+                            <span class="meta-tag">Рис</span>
+                            <span class="meta-tag">Праздничное</span>
+                            <span class="meta-tag">90 мин</span>
+                        </div>
+                        <a href="plov.html" class="recipe-card-btn">Открыть рецепт</a>
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; 2026 Умные Рецепты. Готовьте с удовольствием.</p>
+            <p>Создано в рамках проекта Cooking</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

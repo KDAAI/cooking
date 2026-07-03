@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шарлотка с яблоками - Рецепт с калькулятором</title>
+    <meta name="description" content="Пошаговый интерактивный рецепт приготовления пышной яблочной шарлотки с автоматическим пересчетом пропорций ингредиентов и кондитерскими секретами.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <div class="logo-section">
+                <a href="index.html" class="logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </a>
+                <a href="index.html"><h1>Умные Рецепты</h1></a>
+            </div>
+            <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Переключить тему">
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            </button>
+        </header>
+
+        <!-- BACK BUTTON & HEADER -->
+        <main>
+            <a href="index.html" class="back-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                Назад к каталогу
+            </a>
+
+            <section class="recipe-header">
+                <h2>Шарлотка с яблоками</h2>
+                <div class="recipe-header-meta">
+                    <span>⏱️ 50 минут</span>
+                    <span>🟢 Легко</span>
+                    <span>🍰 Выпечка</span>
+                </div>
+            </section>
+
+            <!-- RECIPE BODY -->
+            <div class="recipe-layout">
+                <!-- INGREDIENTS SIDEBAR -->
+                <aside class="ingredients-card">
+                    <h3>Ингредиенты</h3>
+                    <div class="calculator-info-box">
+                        💡 Измените количество <strong>любого</strong> ингредиента, и остальные пересчитаются автоматически!
+                    </div>
+                    <ul class="ingredients-list">
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Яблоки</span>
+                            <div class="ingredient-amount-wrapper">
+                                <input type="number" class="ingredient-input" data-base-val="500" value="500">
+                                <span class="ingredient-unit">г</span>
+                            </div>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Сахар</span>
+                            <div class="ingredient-amount-wrapper">
+                                <input type="number" class="ingredient-input" data-base-val="200" value="200">
+                                <span class="ingredient-unit">г</span>
+                            </div>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Мука пшеничная</span>
+                            <div class="ingredient-amount-wrapper">
+                                <input type="number" class="ingredient-input" data-base-val="200" value="200">
+                                <span class="ingredient-unit">г</span>
+                            </div>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Яйца</span>
+                            <div class="ingredient-amount-wrapper">
+                                <input type="number" class="ingredient-input" data-base-val="4" value="4">
+                                <span class="ingredient-unit">шт</span>
+                            </div>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Разрыхлитель</span>
+                            <div class="ingredient-amount-wrapper">
+                                <input type="number" class="ingredient-input" data-base-val="5" value="5">
+                                <span class="ingredient-unit">г</span>
+                            </div>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Корица молотая</span>
+                            <div class="ingredient-amount-wrapper">
+                                <input type="number" class="ingredient-input" data-base-val="5" value="5">
+                                <span class="ingredient-unit">г</span>
+                            </div>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Сливочное масло</span>
+                            <div class="ingredient-amount-wrapper">
+                                <input type="number" class="ingredient-input" data-base-val="15" value="15">
+                                <span class="ingredient-unit">г</span>
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
+
+                <!-- INSTRUCTIONS SECTION -->
+                <section class="instructions-section">
+                    <h3>Приготовление</h3>
+                    <div class="steps-list">
+                        <!-- Step 1 -->
+                        <div class="step-item">
+                            <div class="step-checkbox-wrapper">
+                                <input type="checkbox" class="step-checkbox" id="step-0">
+                            </div>
+                            <div class="step-content">
+                                <div class="step-number">Шаг 1</div>
+                                <div class="step-text">Разогрейте духовку до 180°C. Смажьте круглую форму для выпечки сливочным маслом и слегка присыпьте мукой.</div>
+                                <div class="step-qa-container">
+                                    <button class="qa-toggle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42L12 13.59l5.29-5.3a1 1 0 0 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/></svg>
+                                        Зачем разогревать духовку заранее?
+                                    </button>
+                                    <div class="qa-answer-panel">
+                                        <div class="qa-answer-content">
+                                            Бисквитное тесто очень нежное. Если поставить его в холодную духовку, нагрев будет происходить медленно, пузырьки воздуха лопнут до того, как схватится структура белка, и пирог получится плоским и клёклым.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="step-item">
+                            <div class="step-checkbox-wrapper">
+                                <input type="checkbox" class="step-checkbox" id="step-1">
+                            </div>
+                            <div class="step-content">
+                                <div class="step-number">Шаг 2</div>
+                                <div class="step-text">Вымойте яблоки, удалите сердцевину и нарежьте их тонкими ломтиками. Посыпьте нарезанные яблоки корицей и перемешайте.</div>
+                                <div class="step-qa-container">
+                                    <button class="qa-toggle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42L12 13.59l5.29-5.3a1 1 0 0 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/></svg>
+                                        Какие яблоки лучше всего выбрать?
+                                    </button>
+                                    <div class="qa-answer-panel">
+                                        <div class="qa-answer-content">
+                                            Выбирайте кислые или кисло-сладкие, твёрдые яблоки (например, сорта Антоновка или Гренни Смит). Кислинка идеально контрастирует со сладким бисквитным тестом, а плотная структура не даёт яблокам превратиться в пюре.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="step-item">
+                            <div class="step-checkbox-wrapper">
+                                <input type="checkbox" class="step-checkbox" id="step-2">
+                            </div>
+                            <div class="step-content">
+                                <div class="step-number">Шаг 3</div>
+                                <div class="step-text">Разбейте яйца в глубокую сухую миску, всыпьте сахар. Взбивайте миксером на высокой скорости в течение 5-7 минут.</div>
+                                <div class="step-qa-container">
+                                    <button class="qa-toggle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42L12 13.59l5.29-5.3a1 1 0 0 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/></svg>
+                                        Как определить, достаточно ли взбиты яйца?
+                                    </button>
+                                    <div class="qa-answer-panel">
+                                        <div class="qa-answer-content">
+                                            Масса должна увеличиться в объеме в 2.5-3 раза, стать белой, плотной и тягучей. Если провести по ней лопаткой, след должен оставаться на поверхности в течение 3-4 секунд.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="step-item">
+                            <div class="step-checkbox-wrapper">
+                                <input type="checkbox" class="step-checkbox" id="step-3">
+                            </div>
+                            <div class="step-content">
+                                <div class="step-number">Шаг 4</div>
+                                <div class="step-text">Просейте муку вместе с разрыхлителем. Постепенно добавьте её к яичной смеси, аккуратно вмешивая силиконовой лопаткой движениями снизу-вверх от края к центру.</div>
+                                <div class="step-qa-container">
+                                    <button class="qa-toggle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42L12 13.59l5.29-5.3a1 1 0 0 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/></svg>
+                                        Почему нельзя использовать миксер на этом этапе?
+                                    </button>
+                                    <div class="qa-answer-panel">
+                                        <div class="qa-answer-content">
+                                            Миксер разрушит воздушные пузырьки, которые мы создали при взбивании яиц. Медленное складывание лопаткой сохраняет воздух в тесте, делая будущий пирог воздушным и пористым.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="step-item">
+                            <div class="step-checkbox-wrapper">
+                                <input type="checkbox" class="step-checkbox" id="step-4">
+                            </div>
+                            <div class="step-content">
+                                <div class="step-number">Шаг 5</div>
+                                <div class="step-text">Выложите яблоки на дно формы ровным слоем, затем залейте их тестом так, чтобы оно полностью и равномерно покрыло фрукты.</div>
+                                <div class="step-qa-container">
+                                    <button class="qa-toggle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42L12 13.59l5.29-5.3a1 1 0 0 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/></svg>
+                                        Можно ли смешать яблоки с тестом перед выкладыванием?
+                                    </button>
+                                    <div class="qa-answer-panel">
+                                        <div class="qa-answer-content">
+                                            Да, можно. Если вы хотите, чтобы яблоки были равномерно распределены по всему объему теста, смешайте их. Если вы хотите плотный яблочный слой внизу и нежный бисквит вверху — уложите яблоки на дно и залейте.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 6 -->
+                        <div class="step-item">
+                            <div class="step-checkbox-wrapper">
+                                <input type="checkbox" class="step-checkbox" id="step-5">
+                            </div>
+                            <div class="step-content">
+                                <div class="step-number">Шаг 6</div>
+                                <div class="step-text">Поставьте пирог в духовку на 35-40 минут. Первые 25 минут не открывайте дверцу духовки. Проверяйте готовность зубочисткой.</div>
+                                <div class="step-qa-container">
+                                    <button class="qa-toggle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42L12 13.59l5.29-5.3a1 1 0 0 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/></svg>
+                                        Почему нельзя открывать духовку и как проверить готовность?
+                                    </button>
+                                    <div class="qa-answer-panel">
+                                        <div class="qa-answer-content">
+                                            Открытие дверцы снижает температуру в духовке, из-за чего неокрепший бисквитный каркас может опасть и больше не подняться. Проверяйте готовность деревянной шпажкой или зубочисткой в центре пирога: она должна выходить абсолютно сухой.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; 2026 Умные Рецепты. Готовьте с удовольствием.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

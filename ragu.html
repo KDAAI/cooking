@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Овощное рагу с фаршем и кабачком - Рецепт с калькулятором</title>
+    <meta name="description" content="Интерактивный рецепт овощного рагу с фаршем и кабачком по улучшенной ресторанной технологии с автоматическим пересчетом пропорций ингредиентов.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <div class="logo-section">
+                <a href="index.html" class="logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </a>
+                <a href="index.html"><h1>Умные Рецепты</h1></a>
+            </div>
+            <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Переключить тему">
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            </button>
+        </header>
+
+        <!-- BACK BUTTON & HEADER -->
+        <main>
+            <a href="index.html" class="back-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                Назад к каталогу
+            </a>
+
+            <section class="recipe-header">
+                <h2>Овощное рагу с фаршем и кабачком</h2>
+                <div class="recipe-header-meta">
+                    <span>⏱️ 45 минут</span>
+                    <span>🟢 Легко</span>
+                    <span>🥩 Мясное / Овощное</span>
+                </div>
+            </section>
+
+            <!-- RECIPE BODY -->
+            <div class="recipe-layout">
+                <!-- INGREDIENTS SIDEBAR -->
+                <aside class="ingredients-card">
+                    <h3>Ингредиенты</h3>
+                    <div class="calculator-info-box">
+                        💡 Измените вес <strong>любого</strong> ингредиента, и остальные пересчитаются автоматически!
+                    </div>
+                    <ul class="ingredients-list">
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Фарш мясной</span>
+                            <div class="ingredient-amount-wrapper">
+                                <input type="number" class="ingredient-input" data-base-val="400" value="400">
+                                <span class="ingredient-unit">г</span>
+                            </div>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Кабачок</span>
+                            <div class="ingredient-amount-wrapper">
+                                <input type="number" class="ingredient-input" data-base-val="650" value="650">
+                                <span class="ingredient-unit">г</span>
+                            </div>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Помидоры</span>
+                            <div class="ingredient-amount-wrapper">
+                                <input type="number" class="ingredient-input" data-base-val="400" value="400">
+                                <span class="ingredient-unit">г</span>
+                            </div>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Болгарский перец</span>
+                            <div class="ingredient-amount-wrapper">
+                                <input type="number" class="ingredient-input" data-base-val="200" value="200">
+                                <span class="ingredient-unit">г</span>
+                            </div>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Морковь</span>
+                            <div class="ingredient-amount-wrapper">
+                                <input type="number" class="ingredient-input" data-base-val="150" value="150">
+                                <span class="ingredient-unit">г</span>
+                            </div>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Лук репчатый</span>
+                            <div class="ingredient-amount-wrapper">
+                                <input type="number" class="ingredient-input" data-base-val="120" value="120">
+                                <span class="ingredient-unit">г</span>
+                            </div>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Растительное масло</span>
+                            <div class="ingredient-amount-wrapper">
+                                <input type="number" class="ingredient-input" data-base-val="25" value="25">
+                                <span class="ingredient-unit">г</span>
+                            </div>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Соль</span>
+                            <div class="ingredient-amount-wrapper">
+                                <input type="number" class="ingredient-input" data-base-val="8" value="8">
+                                <span class="ingredient-unit">г</span>
+                            </div>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Паприка</span>
+                            <div class="ingredient-amount-wrapper">
+                                <input type="number" class="ingredient-input" data-base-val="4" value="4">
+                                <span class="ingredient-unit">г</span>
+                            </div>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Черный перец</span>
+                            <div class="ingredient-amount-wrapper">
+                                <input type="number" class="ingredient-input" data-base-val="1.5" value="1.5">
+                                <span class="ingredient-unit">г</span>
+                            </div>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Сахар</span>
+                            <div class="ingredient-amount-wrapper">
+                                <input type="number" class="ingredient-input" data-base-val="2" value="2">
+                                <span class="ingredient-unit">г</span>
+                            </div>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Сушеный орегано/базилик</span>
+                            <div class="ingredient-amount-wrapper">
+                                <input type="number" class="ingredient-input" data-base-val="1.5" value="1.5">
+                                <span class="ingredient-unit">г</span>
+                            </div>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Чеснок</span>
+                            <div class="ingredient-amount-wrapper">
+                                <input type="number" class="ingredient-input" data-base-val="10" value="10">
+                                <span class="ingredient-unit">г</span>
+                            </div>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Зелень</span>
+                            <div class="ingredient-amount-wrapper">
+                                <input type="number" class="ingredient-input" data-base-val="15" value="15">
+                                <span class="ingredient-unit">г</span>
+                            </div>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Вода горячая</span>
+                            <div class="ingredient-amount-wrapper">
+                                <input type="number" class="ingredient-input" data-base-val="30" value="30">
+                                <span class="ingredient-unit">г</span>
+                            </div>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Сливочное масло (опц.)</span>
+                            <div class="ingredient-amount-wrapper">
+                                <input type="number" class="ingredient-input" data-base-val="15" value="15">
+                                <span class="ingredient-unit">г</span>
+                            </div>
+                        </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Лимонный сок (опц.)</span>
+                            <div class="ingredient-amount-wrapper">
+                                <input type="number" class="ingredient-input" data-base-val="4" value="4">
+                                <span class="ingredient-unit">г</span>
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
+
+                <!-- INSTRUCTIONS SECTION -->
+                <section class="instructions-section">
+                    <h3>Приготовление</h3>
+                    <div class="steps-list">
+                        <!-- Step 1 -->
+                        <div class="step-item">
+                            <div class="step-checkbox-wrapper">
+                                <input type="checkbox" class="step-checkbox" id="step-0">
+                            </div>
+                            <div class="step-content">
+                                <div class="step-number">Шаг 1</div>
+                                <div class="step-text">Нарежьте лук мелким кубиком, морковь — мелким кубиком или натрите на терке. Болгарский перец нарежьте средним кубиком, кабачок — крупным кубиком (примерно 2х2 см), а помидоры — мелким или средним кубиком.</div>
+                                <div class="step-qa-container">
+                                    <button class="qa-toggle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42L12 13.59l5.29-5.3a1 1 0 0 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/></svg>
+                                        Почему кабачок нужно резать крупнее других овощей?
+                                    </button>
+                                    <div class="qa-answer-panel">
+                                        <div class="qa-answer-content">
+                                            Кабачок очень водянистый и быстро размягчается. Если порезать его мелко, он полностью разварится и превратится в кашу. Крупная нарезка позволяет ему сохранить форму и упругость.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="step-qa-container">
+                                    <button class="qa-toggle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42L12 13.59l5.29-5.3a1 1 0 0 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/></svg>
+                                        Нужно ли чистить кабачок и удалять его сердцевину?
+                                    </button>
+                                    <div class="qa-answer-panel">
+                                        <div class="qa-answer-content">
+                                            Если кабачок молодой (кожура тонкая и легко царапается ногтем), чистить его и удалять семечки не нужно — так он лучше держит форму в рагу. Если кабачок крупный и зрелый, кожуру обязательно срежьте, а рыхлую сердцевину с жесткими семенами выскоблите ложкой.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="step-item">
+                            <div class="step-checkbox-wrapper">
+                                <input type="checkbox" class="step-checkbox" id="step-1">
+                            </div>
+                            <div class="step-content">
+                                <div class="step-number">Шаг 2</div>
+                                <div class="step-text">Хорошо разогрейте глубокую сковороду или казан на средне-сильном огне с 25 г растительного масла.</div>
+                                <div class="step-qa-container">
+                                    <button class="qa-toggle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42L12 13.59l5.29-5.3a1 1 0 0 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/></svg>
+                                        Зачем так сильно разогревать сковороду?
+                                    </button>
+                                    <div class="qa-answer-panel">
+                                        <div class="qa-answer-content">
+                                            Если выложить фарш в теплую сковороду, температура упадет, мясо мгновенно выделит сок и начнет в нем вариться. Сильный разогрев позволяет быстро припечь фарш снаружи, сохранив сок внутри.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="step-item">
+                            <div class="step-checkbox-wrapper">
+                                <input type="checkbox" class="step-checkbox" id="step-2">
+                            </div>
+                            <div class="step-content">
+                                <div class="step-number">Шаг 3</div>
+                                <div class="step-text">Выложите 400 г фарша на сковороду. Первые 2–3 минуты не перемешивайте его, чтобы снизу образовалась румяная корочка. Затем разбейте комочки лопаткой и жарьте ещё 5–6 минут.</div>
+                                <div class="step-qa-container">
+                                    <button class="qa-toggle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42L12 13.59l5.29-5.3a1 1 0 0 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/></svg>
+                                        Почему важно сначала не перемешивать фарш?
+                                    </button>
+                                    <div class="qa-answer-panel">
+                                        <div class="qa-answer-content">
+                                            Нам нужно запустить реакцию Майяра (карамелизацию белков), которая создает насыщенный жареный мясной вкус. Золотистая корочка снизу — это главный источник глубокого вкуса рагу.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="step-item">
+                            <div class="step-checkbox-wrapper">
+                                <input type="checkbox" class="step-checkbox" id="step-3">
+                            </div>
+                            <div class="step-content">
+                                <div class="step-number">Шаг 4</div>
+                                <div class="step-text">Добавьте к фаршу 120 г нарезанного лука и 150 г моркови. Обжаривайте всё вместе на среднем огне 5–7 минут.</div>
+                                <div class="step-qa-container">
+                                    <button class="qa-toggle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42L12 13.59l5.29-5.3a1 1 0 0 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/></svg>
+                                        Почему лук и морковь обжариваются после фарша?
+                                    </button>
+                                    <div class="qa-answer-panel">
+                                        <div class="qa-answer-content">
+                                            Обжаренный до корочки фарш уже отдал часть жира и соков. Лук и морковь впитают этот вкус, размягчатся в мясном жире и раскроют свою сладость, создавая гармоничную вкусовую базу.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="step-item">
+                            <div class="step-checkbox-wrapper">
+                                <input type="checkbox" class="step-checkbox" id="step-4">
+                            </div>
+                            <div class="step-content">
+                                <div class="step-number">Шаг 5</div>
+                                <div class="step-text">Добавьте 200 г болгарского перца и обжаривайте ещё 3–4 минуты, периодически помешивая.</div>
+                                <div class="step-qa-container">
+                                    <button class="qa-toggle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42L12 13.59l5.29-5.3a1 1 0 0 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/></svg>
+                                        Почему перец обжаривается меньше времени?
+                                    </button>
+                                    <div class="qa-answer-panel">
+                                        <div class="qa-answer-content">
+                                            Болгарский перец готовится очень быстро. Ему достаточно пары минут, чтобы стать мягче и отдать блюду свой аромат, но при этом сохранить приятную текстуру и не превратиться в размякшую массу.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 6 -->
+                        <div class="step-item">
+                            <div class="step-checkbox-wrapper">
+                                <input type="checkbox" class="step-checkbox" id="step-5">
+                            </div>
+                            <div class="step-content">
+                                <div class="step-number">Шаг 6</div>
+                                <div class="step-text">Добавьте 400 г нарезанных помидоров, 8 г соли, 4 г паприки, 1.5 г черного перца, 2 г сахара и 1.5 г сушеного орегано или базилика. Готовьте на среднем огне без крышки 5–7 минут.</div>
+                                <div class="step-qa-container">
+                                    <button class="qa-toggle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42L12 13.59l5.29-5.3a1 1 0 0 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/></svg>
+                                        Зачем добавлять сахар и выпаривать помидоры?
+                                    </button>
+                                    <div class="qa-answer-panel">
+                                        <div class="qa-answer-content">
+                                            Помидоры содержат кислоту, которую сахар идеально сбалансирует. Выпаривание без крышки позволяет удалить лишнюю водянистую влагу томатов, превращая их в густой, насыщенный соус-глазурь, который свяжет мясо и специи.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 7 -->
+                        <div class="step-item">
+                            <div class="step-checkbox-wrapper">
+                                <input type="checkbox" class="step-checkbox" id="step-6">
+                            </div>
+                            <div class="step-content">
+                                <div class="step-number">Шаг 7</div>
+                                <div class="step-text">Выложите в соус 650–700 г кабачка, аккуратно перемешайте. Накройте сотейник крышкой и тушите на средне-низком огне 10–12 минут.</div>
+                                <div class="step-qa-container">
+                                    <button class="qa-toggle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42L12 13.59l5.29-5.3a1 1 0 0 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/></svg>
+                                        Почему соль идет до закладки кабачка?
+                                    </button>
+                                    <div class="qa-answer-panel">
+                                        <div class="qa-answer-content">
+                                            Соль вытягивает из овощей влагу. Если посыпать солью сам кабачок, он мгновенно «поплывет», выделив стакан воды, и рагу станет жидким супом. Вводя кабачок в уже соленый и пряный томатный соус, мы сохраняем его кусочки плотными и сочными.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 8 -->
+                        <div class="step-item">
+                            <div class="step-checkbox-wrapper">
+                                <input type="checkbox" class="step-checkbox" id="step-7">
+                            </div>
+                            <div class="step-content">
+                                <div class="step-number">Шаг 8</div>
+                                <div class="step-text">Снимите крышку и оцените густоту рагу. Если жидкости много — поварите 3-5 минут без крышки. Если рагу кажется слишком густым или начинает пригорать — влейте 10–30 г горячей воды.</div>
+                            </div>
+                        </div>
+
+                        <!-- Step 9 -->
+                        <div class="step-item">
+                            <div class="step-checkbox-wrapper">
+                                <input type="checkbox" class="step-checkbox" id="step-8">
+                            </div>
+                            <div class="step-content">
+                                <div class="step-number">Шаг 9</div>
+                                <div class="step-text">Добавьте 10 г мелко измельченного чеснока, 15 г свежей рубленой зелени и по желанию 10-15 г сливочного масла. Перемешайте, накройте крышкой, выключите огонь и дайте настояться 5 минут. При подаче сбрызните лимонным соком (3-5 г).</div>
+                                <div class="step-qa-container">
+                                    <button class="qa-toggle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42L12 13.59l5.29-5.3a1 1 0 0 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/></svg>
+                                        Зачем добавлять сливочное масло и лимонный сок в самом конце?
+                                    </button>
+                                    <div class="qa-answer-panel">
+                                        <div class="qa-answer-content">
+                                            Кусочек сливочного масла связывает соус, придавая ему шелковистую текстуру и мягкий сливочный финиш. Свежий лимонный сок при подаче работает как балансировщик вкуса — он гасит приторность моркови и подчеркивает свежесть зелени, делая вкус блюда ярким и ресторанным.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; 2026 Умные Рецепты. Готовьте с удовольствием.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
