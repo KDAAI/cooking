@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Традиционный плов - Рецепт с калькулятором</title>
-    <meta name="description" content="Пошаговый интерактивный рецепт приготовления узбекского плова с автоматическим пересчетом пропорций ингредиентов и секретами идеального зирвака.">
+    <title>Плов от Алексея - Рецепт с калькулятором</title>
+    <meta name="description" content="Интерактивный рецепт приготовления традиционного плова от Алексея с идеальными пропорциями, прокаливанием масла и добавлением нута.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -31,7 +31,7 @@
             </a>
 
             <section class="recipe-header">
-                <h2>Традиционный плов</h2>
+                <h2>Плов от Алексея</h2>
                 <div class="recipe-header-meta">
                     <span>⏱️ 90 минут</span>
                     <span>🔴 Средне</span>
@@ -45,20 +45,13 @@
                 <aside class="ingredients-card">
                     <h3>Ингредиенты</h3>
                     <div class="calculator-info-box">
-                        💡 Измените вес <strong>любого</strong> ингредиента, и остальные пересчитаются автоматически!
+                        💡 Пропорции плова: 1 часть мяса, 1 часть моркови, 1 часть риса и 0.5 части лука. Измените вес любого ингредиента, и остальные пересчитаются автоматически!
                     </div>
                     <ul class="ingredients-list">
                         <li class="ingredient-item">
                             <span class="ingredient-name">Мясо (мякоть)</span>
                             <div class="ingredient-amount-wrapper">
                                 <input type="number" class="ingredient-input" data-base-val="600" value="600" data-id="meat">
-                                <span class="ingredient-unit">г</span>
-                            </div>
-                        </li>
-                        <li class="ingredient-item">
-                            <span class="ingredient-name">Рис</span>
-                            <div class="ingredient-amount-wrapper">
-                                <input type="number" class="ingredient-input" data-base-val="600" value="600" data-id="rice">
                                 <span class="ingredient-unit">г</span>
                             </div>
                         </li>
@@ -70,16 +63,23 @@
                             </div>
                         </li>
                         <li class="ingredient-item">
+                            <span class="ingredient-name">Рис</span>
+                            <div class="ingredient-amount-wrapper">
+                                <input type="number" class="ingredient-input" data-base-val="600" value="600" data-id="rice">
+                                <span class="ingredient-unit">г</span>
+                            </div>
+                        </li>
+                        <li class="ingredient-item">
                             <span class="ingredient-name">Лук репчатый</span>
                             <div class="ingredient-amount-wrapper">
-                                <input type="number" class="ingredient-input" data-base-val="200" value="200" data-id="onion">
+                                <input type="number" class="ingredient-input" data-base-val="300" value="300" data-id="onion">
                                 <span class="ingredient-unit">г</span>
                             </div>
                         </li>
                         <li class="ingredient-item">
                             <span class="ingredient-name">Растительное масло</span>
                             <div class="ingredient-amount-wrapper">
-                                <input type="number" class="ingredient-input" data-base-val="150" value="150" data-id="oil">
+                                <input type="number" class="ingredient-input" data-base-val="120" value="120" data-id="oil">
                                 <span class="ingredient-unit">мл</span>
                             </div>
                         </li>
@@ -111,6 +111,13 @@
                                 <span class="ingredient-unit">мл</span>
                             </div>
                         </li>
+                        <li class="ingredient-item">
+                            <span class="ingredient-name">Нут (опц.)</span>
+                            <div class="ingredient-amount-wrapper">
+                                <input type="number" class="ingredient-input" data-base-val="100" value="100" data-id="chickpeas">
+                                <span class="ingredient-unit">г</span>
+                            </div>
+                        </li>
                     </ul>
                 </aside>
 
@@ -125,15 +132,15 @@
                             </div>
                             <div class="step-content">
                                 <div class="step-number">Шаг 1</div>
-                                <div class="step-text">Тщательно промойте <span class="step-ingredient-val" data-id="rice">600</span> г риса в холодной воде (5-6 раз) до полной прозрачности воды. Затем замочите его в теплой подсоленной воде.</div>
+                                <div class="step-text">Подготовка ингредиентов: заранее нарежьте морковь брусочками, мясо — средними кусочками, а лук — крупно полукольцами.</div>
                                 <div class="step-qa-container">
                                     <button class="qa-toggle-btn">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42L12 13.59l5.29-5.3a1 1 0 0 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/></svg>
-                                        Зачем промывать и замачивать рис?
+                                        Почему морковь нужно резать именно брусочками?
                                     </button>
                                     <div class="qa-answer-panel">
                                         <div class="qa-answer-content">
-                                            Промывка удаляет свободный крахмал с поверхности зёрен, из-за которого рис слипается в кашу. Замачивание в теплой воде дает рису напитаться влагой заранее, чтобы он сварился быстрее и равномернее в казане, впитав все ароматы масла и специй.
+                                            Морковь брусочками сохраняет свою текстуру и форму при долгом тушении в казане. Тертая морковь быстро превратится в кашу, плов потеряет свой традиционный вид и станет липким.
                                         </div>
                                     </div>
                                 </div>
@@ -147,15 +154,15 @@
                             </div>
                             <div class="step-content">
                                 <div class="step-number">Шаг 2</div>
-                                <div class="step-text">Разогрейте растительное масло (<span class="step-ingredient-val" data-id="oil">150</span> мл) в казане или глубокой посуде на максимальном огне. Обжарьте нарезанный полукольцами лук (<span class="step-ingredient-val" data-id="onion">200</span> г) до темно-золотистого цвета (7-10 минут).</div>
+                                <div class="step-text">Налейте растительное масло (<span class="step-ingredient-val" data-id="oil">120</span> мл) в казан так, чтобы оно покрывало дно. Хорошо прокалите его: киньте туда «попку» (хвостик) луковицы. Дождитесь, пока она полностью почернеет, после чего вытащите её и выбросите.</div>
                                 <div class="step-qa-container">
                                     <button class="qa-toggle-btn">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42L12 13.59l5.29-5.3a1 1 0 0 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/></svg>
-                                        Почему лук нужно обжаривать так сильно?
+                                        Зачем прокаливать масло с кусочком лука?
                                     </button>
                                     <div class="qa-answer-panel">
                                         <div class="qa-answer-content">
-                                            Цвет обжаренного лука напрямую формирует цвет всего плова. Карамелизированный лук растворяется при тушении, придавая маслу и рису глубокий золотистый оттенок и легкий сладковатый привкус.
+                                            Этот прием очищает масло, нейтрализует неприятные запахи и привкусы сырого масла. Луковая «попка» впитывает в себя вредные примеси, и масло становится идеально чистым и ароматным для жарки.
                                         </div>
                                     </div>
                                 </div>
@@ -169,15 +176,15 @@
                             </div>
                             <div class="step-content">
                                 <div class="step-number">Шаг 3</div>
-                                <div class="step-text">Нарежьте мясо (<span class="step-ingredient-val" data-id="meat">600</span> г) кусками среднего размера (примерно 3х3 см) и выложите к луку. Обжаривайте на максимальном огне, помешивая, до появления корочки (10-15 минут).</div>
+                                <div class="step-text">Выложите в казан подготовленное мясо (<span class="step-ingredient-val" data-id="meat">600</span> г). Быстро обжарьте его на сильном огне до образования легкой румяной корочки.</div>
                                 <div class="step-qa-container">
                                     <button class="qa-toggle-btn">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42L12 13.59l5.29-5.3a1 1 0 0 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/></svg>
-                                        Какую температуру поддерживать при обжарке мяса?
+                                        Почему мясо обжаривают недолго?
                                     </button>
                                     <div class="qa-answer-panel">
                                         <div class="qa-answer-content">
-                                            Держите максимальный огонь. Нам нужно быстро сформировать корочку на мясе («запечатать» его), чтобы весь сок остался внутри, а мясо не начало тушиться раньше времени.
+                                            Нам нужно лишь «запечатать» сок внутри кусочков мяса. До полной готовности и нежности оно дойдет во время последующего долгого томления с водой.
                                         </div>
                                     </div>
                                 </div>
@@ -191,18 +198,7 @@
                             </div>
                             <div class="step-content">
                                 <div class="step-number">Шаг 4</div>
-                                <div class="step-text">Добавьте морковь (<span class="step-ingredient-val" data-id="carrot">600</span> г), нашинкованную соломкой (не тереть на терке!). Обжаривайте всё вместе на среднем огне, помешивая, 10-15 минут, пока морковь не станет мягкой.</div>
-                                <div class="step-qa-container">
-                                    <button class="qa-toggle-btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42L12 13.59l5.29-5.3a1 1 0 0 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/></svg>
-                                        Почему морковь нужно резать вручную соломкой?
-                                    </button>
-                                    <div class="qa-answer-panel">
-                                        <div class="qa-answer-content">
-                                            Морковь, натертая на терке, слишком тонкая. При длительном томлении в казане она полностью растворится в масле и превратится в кашу, из-за чего плов слипнется. Нарезка соломкой (около 5 мм) сохраняет структуру моркови.
-                                        </div>
-                                    </div>
-                                </div>
+                                <div class="step-text">Добавьте к мясу крупно нарезанный лук (<span class="step-ingredient-val" data-id="onion">300</span> г) и обжаривайте до золотистого цвета. Следом выложите морковь брусочками (<span class="step-ingredient-val" data-id="carrot">600</span> г) и жарьте всё вместе, пока она не станет мягкой.</div>
                             </div>
                         </div>
 
@@ -213,15 +209,15 @@
                             </div>
                             <div class="step-content">
                                 <div class="step-number">Шаг 5</div>
-                                <div class="step-text">Всыпьте половину зиры (около <span class="step-ingredient-val" data-id="zira">5</span> г), соль (<span class="step-ingredient-val" data-id="salt">15</span> г), положите в центр целую неочищенную головку чеснока (<span class="step-ingredient-val" data-id="garlic">50</span> г) и залейте горячей водой (<span class="step-ingredient-val" data-id="water">800</span> мл) на 1.5 см выше уровня мяса. Тушите на медленном огне без крышки 30-40 минут (это зирвак).</div>
+                                <div class="step-text">Залейте мясо с овощами горячей водой так, чтобы она почти покрывала мясо. Если хотите добавить нут (<span class="step-ingredient-val" data-id="chickpeas">100</span> г), выложите его прямо сейчас. Дайте закипеть и томите зирвак на малом огне под крышкой 1 час (если готовите говядину или баранину) или 30 минут (для курицы).</div>
                                 <div class="step-qa-container">
                                     <button class="qa-toggle-btn">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42L12 13.59l5.29-5.3a1 1 0 0 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/></svg>
-                                        Что такое зирвак и почему он должен быть пересолен?
+                                        Когда правильно добавлять нут?
                                     </button>
                                     <div class="qa-answer-panel">
                                         <div class="qa-answer-content">
-                                            Зирвак — это бульонная основа плова. Медленное тушение моркови и мяса со специями насыщает масло вкусом. Бульон должен казаться немного солоноватым, так как пресный рис при закладке вберет в себя всю лишнюю соль.
+                                            Нут добавляется в казан сразу, как только вы залили обжаренное мясо с овощами водой. Нуту требуется длительное тушение в зирваке, чтобы он размягчился и полностью впитал мясные соки и ароматы специй.
                                         </div>
                                     </div>
                                 </div>
@@ -235,18 +231,7 @@
                             </div>
                             <div class="step-content">
                                 <div class="step-number">Шаг 6</div>
-                                <div class="step-text">Достаньте чеснок. Ровным слоем выложите рис поверх мяса с морковью. Разровняйте поверхность. НЕ ПЕРЕМЕШИВАЙТЕ! Аккуратно залейте кипятком через шумовку (на 1.5 см выше риса).</div>
-                                <div class="step-qa-container">
-                                    <button class="qa-toggle-btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42L12 13.59l5.29-5.3a1 1 0 0 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/></svg>
-                                        Почему категорически нельзя перемешивать рис со дна?
-                                    </button>
-                                    <div class="qa-answer-panel">
-                                        <div class="qa-answer-content">
-                                            Плов — это слоистое блюдо. Рис должен готовиться на пару, который поднимается от тушащегося снизу мяса и моркови. Если перемешать плов на этом этапе, рис упадет на дно казана, впитает масло и подгорит, а блюдо превратится в липкую кашу.
-                                        </div>
-                                    </div>
-                                </div>
+                                <div class="step-text">Пока тушится зирвак, тщательно промойте рис (<span class="step-ingredient-val" data-id="rice">600</span> г). За 10 минут до окончания тушения зирвака закиньте специи (особенно зиру, <span class="step-ingredient-val" data-id="zira">10</span> г), соль (<span class="step-ingredient-val" data-id="salt">15</span> г) и положите головку чеснока (<span class="step-ingredient-val" data-id="garlic">50</span> г).</div>
                             </div>
                         </div>
 
@@ -257,7 +242,18 @@
                             </div>
                             <div class="step-content">
                                 <div class="step-number">Шаг 7</div>
-                                <div class="step-text">Варите на сильном огне, пока вода полностью не уйдет с поверхности риса. Затем верните чеснок в центр, сделайте несколько вертикальных проколов ручкой ложки для выхода пара. Посыпьте остатками зиры.</div>
+                                <div class="step-text">Высыпьте подготовленный рис ровным слоем сверху, разровняйте его лопаткой. Долейте кипятка (<span class="step-ingredient-val" data-id="water">800</span> мл) так, чтобы вода покрывала рис. Максимально прибавьте огонь.</div>
+                                <div class="step-qa-container">
+                                    <button class="qa-toggle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42L12 13.59l5.29-5.3a1 1 0 0 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/></svg>
+                                        Нужно ли перемешивать плов на этом шаге?
+                                    </button>
+                                    <div class="qa-answer-panel">
+                                        <div class="qa-answer-content">
+                                            Нет, слои перемешивать нельзя. Рис должен лежать на подушке из овощей и мяса и томиться на пару.
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -268,7 +264,29 @@
                             </div>
                             <div class="step-content">
                                 <div class="step-number">Шаг 8</div>
-                                <div class="step-text">Плотно накройте казан крышкой, убавьте огонь до самого минимума и томите плов 20-25 минут. Выключите огонь, дайте постоять под крышкой еще 10 минут, затем аккуратно перемешайте и подавайте.</div>
+                                <div class="step-text">В процессе варки риса аккуратно перемешивайте только верхний слой риса лопаткой, ни в коем случае не задевая нижний слой зирвака (овощей и мяса), чтобы рис пропитался равномерно.</div>
+                                <div class="step-qa-container">
+                                    <button class="qa-toggle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42L12 13.59l5.29-5.3a1 1 0 0 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/></svg>
+                                        Зачем перемешивать верхний слой риса?
+                                    </button>
+                                    <div class="qa-answer-panel">
+                                        <div class="qa-answer-content">
+                                            Это помогает пару и поднимающемуся маслу равномерно распределиться по зернам риса. Верхние рисинки не высохнут и приготовятся одновременно с нижними.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 9 -->
+                        <div class="step-item">
+                            <div class="step-checkbox-wrapper">
+                                <input type="checkbox" class="step-checkbox" id="step-8">
+                            </div>
+                            <div class="step-content">
+                                <div class="step-number">Шаг 9</div>
+                                <div class="step-text">Когда вся вода выкипит с поверхности, убавьте огонь до минимума, плотно закройте казан крышкой и томите плов 30 минут. Проверьте готовность риса сверху: если он мягкий, плов готов! Хорошо перемешайте все слои перед подачей.</div>
                             </div>
                         </div>
                     </div>
